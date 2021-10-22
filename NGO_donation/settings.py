@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*ww1u^5^6vh0ttku7%^r9=df_pvb=nqittyfm%@l4y$uzux711'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['asha-foundation.herokuapp.com','127.0.0.1']
 
 #SMTP Configuration
 
