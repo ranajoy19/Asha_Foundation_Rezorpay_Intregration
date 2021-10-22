@@ -1,0 +1,162 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/cause.css'%}">
+
+
+
+{% include 'navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/d5ab304f57.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+   .down{
+   margin-top:150px;
+   font-size: 15px;
+
+    }
+     .table td, .table th {
+        font-size: 18px;
+    }
+
+
+</style>
+
+
+</head>
+<body>
+<div class="down">
+        <table class="table table-hover table-dark"style="">
+
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Amount</th>
+            </tr>
+            <tr>
+            {% for i in donation %}
+              <td>{{i.name}}</td>
+              <td>{{i.email}}</td>
+              <td>{{i.amount}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+
+<section class="page-section jumbo" id="contactus">
+
+    <!-- footer -->
+    <footer class="footer ">
+      <div class="mt-5">
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                      <div class="footer-des">
+                          <h3>আস্থা  </h3>
+                          <p class="pb-3">A Charitable o organization which helps the people who are in need !! </p>
+                          <p>Chinsurah,Hooghly,<br>West Bengal, India 712103<br><br><strong>Phone:</strong>+9131875590<br>
+                          <strong>Email:</strong> asthafoundation3@gmail.com<br></p>
+                          <div class="social-links mt-3">
+                              <a href="https://github.com/ranajoy19">
+                                  <i class="fab fa-github "></i>
+                              </a>
+                              <a href="https://www.linkedin.com/in/ranajoy-bhattacharjee-1b37b5150/">
+                                  <i class="fab fa-linkedin "></i>
+                              </a>
+                              <a href="https://www.youtube.com/channel/UC8LrrwWvXBVN-XLzfk5p4Eg">
+                                  <i class="fab fa-youtube "></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6 footer-links">
+                      <h4>Useful Links</h4>
+                      <ul>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="/">Home</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="/#about">About us</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="/#donate">Donate Now !!</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="/list">list of donators</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="/#about">About Team</a>
+                          </li>
+
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 footer-links">
+                      <h4>Other projects</h4>
+                      <ul>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="{% url 'home' %}">আস্থা</a>
+                          </li>
+                          <li>
+                              <i class="fas fa-chevron-right"></i>
+                              <a href="https://covid19detection.pythonanywhere.com/">Covid19-detection and tracker</a>
+                          </li>
+
+
+                      </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-6 footer-newsletter">
+                      <h4  class="font-weight-bold">
+                          Join Our Team !!
+                      </h4>
+                      <ul>
+
+                              <i class="fas fa-chevron-right"></i>
+                        <a href="https://chat.whatsapp.com/LgbIS1QKsacANmx2Q1XyK4" style="color:black"> Start voluteering !!<br>  Start Contributing !! <br> Start helping !!</p></a>
+
+                      </ul>
+                      <form>
+                            <input  type="email" name="footerEmail" placeholder="ranajoybhattacharjee19@gmail.com">
+                          <div>
+                              <input  type="submit" value="Subscribe">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="mx-auto text-center pt-5">
+                <p ><strong> <a href="{% url 'home' %}">আস্থা </a> <br> This website is made with  <i class="fas fa-heart"></i> by <a href="">RANAJOY BHATTACHARJEE</a> </strong></p>
+              </div>
+
+          </div>
+      </div>
+      </div>
+
+  </footer>
+  <!-- end of footer -->
+</section>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
