@@ -1,0 +1,102 @@
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.col-6.mx-auto{
+margin-top:10px;
+margin-bottom: 25px;
+}
+.h1{
+margin-top:120px;
+font-weight: bold;
+
+}
+
+
+
+.text-center{
+margin-top:50px;
+
+
+
+}
+
+.display-4.font-weight-bold.mb-4{
+margin-top:10px;
+
+}
+h1{
+font-weight: bold;
+  font-size: 30px;
+
+}
+.p{
+font-size: 22px;
+
+}
+
+
+
+.hero {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(https://i.pinimg.com/originals/81/e2/d6/81e2d6d3ae4ca6e763633252e91a8dbb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+
+.page-holder {
+  min-height: 72vh;
+}
+/* make the header image full screen
+.bg-cover {
+  background-size: cover !important;
+}
+*/
+.btn.btn-primary.btn-lg{
+
+
+
+}
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+.payment{
+    display: block;
+    text-align: center;
+    font-size: .85em;
+
+}
+.right{
+    float: right;
+    margin-right:10px;
+
+
+ }
+.goal{
+ margin-top:10px
+}
+
+.bulbul{
+margin-top:30px
+}
+.text-center.mx-auto{
+margin-top:3px
+
+}
